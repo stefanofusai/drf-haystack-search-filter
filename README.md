@@ -26,7 +26,12 @@ class MyAPIView(...):
 You can customize the search behavior by overriding the `_search` method.
 
 ```python
+from typing import TypeVar
+
 from drf_haystack_search_filter.filters import HaystackSearchFilter
+
+T = TypeVar("T")
+
 
 class MyHaystackSearchFilter(HaystackSearchFilter):
     def _search(self, request: Request, queryset: QuerySet[T], view: APIView, query: str) -> QuerySet[T]:
