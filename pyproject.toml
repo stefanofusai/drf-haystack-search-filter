@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "drf-haystack-search-filter"
-version = "1.0.1"
+version = "1.0.2"
 authors = [{ "name" = "Stefano Fusai", "email" = "stefanofusai@gmail.com" }]
 description = "A simple package to implement a django-haystack search filter in Django Rest Framework"
 readme = "README.md"
