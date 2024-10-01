@@ -1,6 +1,6 @@
 # drf-haystack-search-filter
 
-A simple package to implement a [django-haystack](https://github.com/django-haystack/django-haystack) search filter in Django Rest Framework.
+A [django-haystack](https://github.com/django-haystack/django-haystack) search filter for Django Rest Framework.
 
 ## Installation
 
