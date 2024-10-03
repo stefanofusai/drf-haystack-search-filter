@@ -10,7 +10,7 @@ T = TypeVar("T")
 
 
 class HaystackSearchFilter(SearchFilter):
-    """A search filter for Django Rest Framework that uses Django Haystack's search indexes."""  # noqa: E501
+    """A search filter for Django Rest Framework that uses Django Haystack's search indexes."""
 
     def filter_queryset(  # noqa: D102
         self, request: Request, queryset: QuerySet[T], view: APIView
@@ -32,7 +32,8 @@ class HaystackSearchFilter(SearchFilter):
     def _search(
         self, request: Request, queryset: QuerySet[T], view: APIView, query: str
     ) -> QuerySet[T]:
-        """A method that can be overridden to customize the search behavior.
+        """
+        A method that can be overridden to customize the search behavior.
 
         :param request: The request object.
         :type request: Request
