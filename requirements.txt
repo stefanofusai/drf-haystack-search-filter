@@ -25,7 +25,7 @@ packaging==24.1
     # via django-haystack
 platformdirs==4.3.6
     # via virtualenv
-pre-commit==4.0.0
+pre-commit==4.0.1
     # via -r requirements.in
 pyyaml==6.0.2
     # via pre-commit
