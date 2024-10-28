@@ -21,7 +21,6 @@ strict = true
 
 [tool.ruff.lint]
 select = ["ALL"]
-
 ignore = [
     # Bad rules
     "COM812",
@@ -44,3 +43,6 @@ ignore = [
     "D100",
     "D104"
 ]
+
+[tool.ruff.lint.isort]
+split-on-trailing-comma = false
