@@ -1,19 +1,30 @@
-[build-system]
-requires = ["setuptools >= 61.0"]
-build-backend = "setuptools.build_meta"
-
 [project]
 name = "drf-haystack-search-filter"
-version = "1.1.1"
-authors = [{ "name" = "Stefano Fusai", "email" = "stefanofusai@gmail.com" }]
+version = "1.2.0"
 description = "A django-haystack search filter for Django Rest Framework."
 readme = "README.md"
+authors = [
+    { name = "Stefano Fusai", email = "stefanofusai@gmail.com" }
+]
+maintainers = [
+    { name = "Stefano Fusai", email = "stefanofusai@gmail.com" }
+]
 requires-python = ">=3.12"
-dependencies = ["django", "django-haystack", "djangorestframework"]
+dependencies = [
+    "django==5.1.4",
+    "django-haystack==3.3.0",
+    "djangorestframework==3.15.2",
+    "pre-commit==4.0.1",
+    "ruff==0.8.2",
+]
 
 [project.urls]
 Homepage = "https://github.com/stefanofusai/drf-haystack-search-filter"
 Repository = "https://github.com/stefanofusai/drf-haystack-search-filter"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [tool.mypy]
 python_version = "3.12"
