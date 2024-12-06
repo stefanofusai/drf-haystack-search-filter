@@ -14,8 +14,6 @@ dependencies = [
     "django==5.1.4",
     "django-haystack==3.3.0",
     "djangorestframework==3.15.2",
-    "pre-commit==4.0.1",
-    "ruff==0.8.2",
 ]
 
 [project.urls]
@@ -25,6 +23,12 @@ Repository = "https://github.com/stefanofusai/drf-haystack-search-filter"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[dependency-groups]
+development = [
+    "pre-commit==4.0.1",
+    "ruff==0.8.2",
+]
 
 [tool.mypy]
 python_version = "3.12"
