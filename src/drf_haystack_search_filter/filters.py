@@ -9,7 +9,7 @@ from rest_framework.views import APIView
 T = TypeVar("T")
 
 
-class HaystackSearchFilter(SearchFilter):
+class HaystackSearchFilter(SearchFilter):  # type: ignore[misc]
     """A search filter for Django Rest Framework that uses Django Haystack's search indexes."""
 
     def filter_queryset(  # noqa: D102
