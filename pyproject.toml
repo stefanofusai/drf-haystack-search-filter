@@ -1,6 +1,6 @@
 [project]
 name = "drf-haystack-search-filter"
-version = "1.2.0"
+version = "1.2.1"
 description = "A django-haystack search filter for Django Rest Framework."
 readme = "README.md"
 authors = [
@@ -26,12 +26,13 @@ build-backend = "hatchling.build"
 
 [dependency-groups]
 development = [
+    "mypy==1.13.0",
     "pre-commit==4.0.1",
     "ruff==0.8.2",
 ]
 
 [tool.mypy]
-python_version = "3.12"
+ignore_missing_imports = true
 strict = true
 
 [tool.ruff.lint]
